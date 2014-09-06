@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>depressiverobot.tk</title>
+ <link href="http://depressiverobot.de/atom.xml" rel="self"/>
+ <link href="http://depressiverobot.de/"/>
+ <updated>2014-09-06T15:31:31+02:00</updated>
+ <id>http://depressiverobot.de</id>
+ <author>
+   <name>Marvin Frommhold</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello World!</title>
+   <link href="http://depressiverobot.de/2014/09/06/hello-world/"/>
+   <updated>2014-09-06T00:00:00+02:00</updated>
+   <id>http://depressiverobot.de/2014/09/06/hello-world</id>
+   <content type="html">&lt;p&gt;More nerdy stuff coming soon...&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

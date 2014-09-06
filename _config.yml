@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            depressiverobot.tk
+tagline:          'a Netzkind`s blog'
+description:      'A blog full of stuff around my PhD thesis, the web and everything I`m interested in.'
+url:              http://depressiverobot.de
+baseurl:          '/'
+paginate:         5
+
+author:
+  name:           'Marvin Frommhold'
+  url:            depressiverobot.tk
+
+# Custom vars
+#version:          1.0.0
+
+#github:
+#  repo:           https://github.com/poole/lanyon
