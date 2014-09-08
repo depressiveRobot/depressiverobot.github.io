@@ -7,15 +7,15 @@ permalink:        pretty
 
 # Setup
 title:            depressiverobot.tk
-tagline:          'a semantic developer`s diary'
-description:      'A blog full of stuff around my PhD thesis, (semantic) developer things, gadgets and everything else I`m interested in.'
+tagline:          "a semantic developer's diary"
+description:      "A blog full of stuff around my PhD thesis, (semantic) developer things, gadgets and everything else I'm interested in."
 url:              http://depressiverobot.tk
-baseurl:          '/'
+baseurl:          "/"
 paginate:         5
 
 author:
-  name:           'Marvin Frommhold'
-  url:            http://depressiverobot.tk
+  name:           "Marvin Frommhold"
+  url:            http://depressiverobot.tk/about/
 
 # Custom vars
 #version:          1.0.0
