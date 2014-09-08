@@ -161,6 +161,8 @@
 	},
 	"file_history":
 	[
+		"/Users/marvin/Development/Workspaces/private/depressiverobot.github.io/photos.md",
+		"/Users/marvin/Development/Workspaces/private/depressiverobot.github.io/_includes/sidebar.html",
 		"/Users/marvin/Development/Workspaces/private/depressiverobot.github.io/404.html",
 		"/Users/marvin/Development/Workspaces/private/depressiverobot.github.io/LICENSE",
 		"/Users/marvin/Development/Workspaces/private/depressiverobot.github.io/README.md",
@@ -286,9 +288,7 @@
 		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/genDoc.sh",
 		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/specification/auth-schema.ttl",
 		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/onto/auth-owl.ttl",
-		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/specification/sparqlQueries.rq",
-		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/src/main/resources/sparqlQueries/listReadableGraphs.rq",
-		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/specification/listOfReadableGraphs.rq"
+		"/Users/marvin/Development/Workspaces/eccenca/eLDS-Auth/auth-ontology/specification/sparqlQueries.rq"
 	],
 	"find":
 	{
