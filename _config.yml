@@ -6,19 +6,13 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            depressiverobot.tk
-tagline:          "a semantic developer's diary"
+title:            depressiverobot.com
+tagline:          "a semantic developer's blog"
 description:      "A blog full of stuff around my PhD thesis, (semantic) developer things, gadgets and everything else I'm interested in."
-url:              http://depressiverobot.tk
+url:              http://depressiverobot.com
 baseurl:          "/"
 paginate:         5
 
 author:
   name:           "Marvin Frommhold"
-  url:            http://depressiverobot.tk/about/
-
-# Custom vars
-#version:          1.0.0
-
-#github:
-#  repo:           https://github.com/poole/lanyon
+  url:            http://depressiverobot.com/about/
