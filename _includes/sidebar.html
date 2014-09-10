@@ -4,18 +4,12 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
+  <!-- blog description -->
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
-  <div class="sidebar-item" style="text-align: center; padding-top: 0;">
-    <a style="display: inline-block; padding: 0 0.3rem;" title="Twitter" target="_blank" href="https://twitter.com/depressiveRobot"><i class="fa fa-twitter fa-2x"></i></a>
-    <a style="display: inline-block; padding: 0 0.3rem;" title="Google+" target="_blank" href="https://plus.google.com/+MarvinFrommhold/"><i class="fa fa-google-plus fa-2x"></i></a>
-    <a style="display: inline-block; padding: 0 0.3rem;" title="GitHub" target="_blank" href="https://github.com/depressiveRobot"><i class="fa fa-github fa-2x"></i></a>
-    <a style="display: inline-block; padding: 0 0.3rem;" title="RSS feed" target="_blank" href="http://depressiverobot.com/atom.xml"><i class="fa fa-rss fa-2x"></i></a>
-    <p style="clear: both;" />
-  </div>
-
-
+  
+  <!-- blog pages -->
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
 
@@ -34,7 +28,17 @@
     {% endfor %}
   </nav>
 
-  <div class="sidebar-item">
+  <!-- social links -->
+  <div class="sidebar-item" style="text-align: center;">
+    <a style="display: inline-block; padding: 0 0.3rem;" title="Twitter" target="_blank" href="https://twitter.com/depressiveRobot"><i class="fa fa-twitter fa-2x"></i></a>
+    <a style="display: inline-block; padding: 0 0.3rem;" title="Google+" target="_blank" href="https://plus.google.com/+MarvinFrommhold/"><i class="fa fa-google-plus fa-2x"></i></a>
+    <a style="display: inline-block; padding: 0 0.3rem;" title="GitHub" target="_blank" href="https://github.com/depressiveRobot"><i class="fa fa-github fa-2x"></i></a>
+    <a style="display: inline-block; padding: 0 0.3rem;" title="RSS feed" target="_blank" href="http://depressiverobot.com/atom.xml"><i class="fa fa-rss fa-2x"></i></a>
+    <p style="clear: both;" />
+  </div>
+
+  <!-- license information -->
+  <div class="sidebar-item" style="padding-top: 0;">
     <small>
       <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">depressiverobot.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="/about/" property="cc:attributionName" rel="cc:attributionURL">Marvin Frommhold</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
     </small>
