@@ -12,8 +12,8 @@ layout: null
  <category term="development" label="Development"/>
  <link href="{{ site.url }}/atom.xml" rel="self"/>
  <link href="{{ site.url }}/"/>
- <icon>{{ site.baseurl }}public/favicon.ico</icon>
- <logo>{{ site.baseurl }}public/apple-touch-icon-precomposed.png</logo>
+ <icon>{{ site.url }}/public/favicon.ico</icon>
+ <logo>{{ site.url }}/public/apple-touch-icon-precomposed.png</logo>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}</id>
  <author>
@@ -21,7 +21,7 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
  <rights type="html">
-    &lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;depressiverobot.com&lt;/span&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;/about/&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Marvin Frommhold&lt;/a&gt; is licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc/4.0/&quot;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;.
+    &lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;depressiverobot.com&lt;/span&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;{{ site.url }}/about/&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Marvin Frommhold&lt;/a&gt; is licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc/4.0/&quot;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;.
   </rights>
 
  {% for post in site.posts %}
