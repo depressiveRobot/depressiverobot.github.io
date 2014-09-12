@@ -28,8 +28,9 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle fa fa-bars"></label>
 
+    <script src="{{ site.baseurl }}public/js/quo.js"></script>
     {% include google_analytics.html %}
-    <script>
+<!--    <script>
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
@@ -45,6 +46,32 @@
           checkbox.checked = false;
         }, false);
       })(document);
+    </script> -->
+    <script>
+      $$('body').swipeRight(function() {
+        var checkbox = $$('#sidebar-checkbox');
+
+        if (!checkbox[0].checked)
+          checkbox[0].checked = true;
+      });
+    </script>
+    <script>
+      $$('body').swipeLeft(function() {
+        var checkbox = $$('#sidebar-checkbox');
+
+        if (checkbox[0].checked)
+          checkbox[0].checked = false;
+      });
+    </script>
+    <script>
+      $$('body').tap(function(e) {
+        var target = e.target;
+        var checkbox = $$('#sidebar-checkbox');
+        var sidebar = $$('#sidebar');
+
+        if (checkbox[0].checked && !sidebar[0].contains(target))
+          checkbox[0].checked = false;
+      });
     </script>
   </body>
 </html>
