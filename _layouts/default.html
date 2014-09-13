@@ -30,47 +30,34 @@
 
     <script src="{{ site.baseurl }}public/js/quo.js"></script>
     {% include google_analytics.html %}
-<!--    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
-
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script> -->
     <script>
       $$('body').swipeRight(function() {
-        var checkbox = $$('#sidebar-checkbox');
+        var checkbox = $$('#sidebar-checkbox')[0];
 
-        if (!checkbox[0].checked)
-          checkbox[0].checked = true;
+        if (!checkbox.checked)
+          checkbox.checked = true;
       });
     </script>
     <script>
       $$('body').swipeLeft(function() {
-        var checkbox = $$('#sidebar-checkbox');
+        var checkbox = $$('#sidebar-checkbox')[0];
 
-        if (checkbox[0].checked)
-          checkbox[0].checked = false;
+        if (checkbox.checked)
+          checkbox.checked = false;
       });
     </script>
     <script>
       $$('body').tap(function(e) {
         var target = e.target;
-        var checkbox = $$('#sidebar-checkbox');
-        var sidebar = $$('#sidebar');
+        var checkbox = $$('#sidebar-checkbox')[0];
+        var sidebar = $$('#sidebar')[0];
+        var toggle = $$('.sidebar-toggle')[0];
 
-        if (checkbox[0].checked && !sidebar[0].contains(target))
-          checkbox[0].checked = false;
+        if (checkbox.checked && target === toggle)
+          return;
+
+        if (checkbox.checked && !sidebar.contains(target))
+          checkbox.checked = false;
       });
     </script>
   </body>
