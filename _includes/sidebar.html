@@ -12,7 +12,10 @@
   <!-- blog pages -->
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
+    <a class="sidebar-nav-item{% if page.url == '/photos/' %} active{% endif %}" href="/photos/">Photos</a>
+    <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="/about/">About</a>
 
+    <!--
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -26,6 +29,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+    -->
   </nav>
 
   <!-- social links -->
@@ -38,9 +42,9 @@
   </div>
 
   <!-- license information -->
-  <div class="sidebar-item" style="padding-top: 0;">
-    <small>
-      <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">depressiverobot.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="/about/" property="cc:attributionName" rel="cc:attributionURL">Marvin Frommhold</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+  <div class="sidebar-item" style="padding-top: 5rem;">
+    <small resource="http://depressiverobot.com" typeof="http://schema.org/WebSite">
+      All content on this site by <span property="http://creativecommons.org/ns#attributionName">Marvin Frommhold</span> is licensed under a <a property="http://creativecommons.org/ns#license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
     </small>
   </div>
 </div>
