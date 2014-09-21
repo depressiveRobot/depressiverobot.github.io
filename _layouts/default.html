@@ -3,10 +3,10 @@
 
   {% include head.html %}
 
-  <body>
+  <body vocab="http://schema.org/" prefix="foaf: http://xmlns.com/foaf/0.1/" prefix="cc: http://creativecommons.org/ns#">
 
-  <span resource="http://depressiverobot.com"><span property="http://schema.org/author" resource="{{ site.url }}/about/#MarvinFrommhold"></span></span>
-  <span resource="{{ site.url }}/about/#MarvinFrommhold" typeof="http://schema.org/Person"></span>
+    <span resource="http://depressiverobot.com" typeof="WebSite"><span property="author" resource="{{ site.url }}/about/#MarvinFrommhold"></span></span>
+    <span resource="{{ site.url }}/about/#MarvinFrommhold" typeof="Person"></span>
 
     {% include sidebar.html %}
 
