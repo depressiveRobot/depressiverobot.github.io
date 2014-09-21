@@ -10,6 +10,8 @@
 
     {% include sidebar.html %}
 
+    <div class="sidebar-touch"></div>
+
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
@@ -32,36 +34,8 @@
     <label for="sidebar-checkbox" class="sidebar-toggle fa fa-bars"></label>
 
     <script src="{{ site.baseurl }}public/js/quo.js"></script>
+    <script src="{{ site.baseurl }}public/js/depressiverobot.js"></script>
     {% include google_analytics.html %}
-    <script>
-      $$('body').swipeRight(function() {
-        var checkbox = $$('#sidebar-checkbox')[0];
 
-        if (!checkbox.checked)
-          checkbox.checked = true;
-      });
-    </script>
-    <script>
-      $$('body').swipeLeft(function() {
-        var checkbox = $$('#sidebar-checkbox')[0];
-
-        if (checkbox.checked)
-          checkbox.checked = false;
-      });
-    </script>
-    <script>
-      $$('body').tap(function(e) {
-        var target = e.target;
-        var checkbox = $$('#sidebar-checkbox')[0];
-        var sidebar = $$('#sidebar')[0];
-        var toggle = $$('.sidebar-toggle')[0];
-
-        if (checkbox.checked && target === toggle)
-          return;
-
-        if (checkbox.checked && !sidebar.contains(target))
-          checkbox.checked = false;
-      });
-    </script>
   </body>
 </html>

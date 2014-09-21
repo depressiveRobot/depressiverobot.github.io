@@ -10,7 +10,6 @@ layout: page
 * Semantic Web developer at <span resource="#MarvinFrommhold"><span property="worksFor" resource="http://eccenca.com"><span resource="http://eccenca.com" typeof="Organization"><a property="sameAs" target="_blank" href="http://eccenca.com"><span property="name">eccenca</span></a></span></span></span>
 
 <br/>
-<br/>
 
 # About this site
 <span resource="http://depressiverobot.com"><span
@@ -18,7 +17,7 @@ property="description">This web site serves as a place for posts about my thesis
 the adventures as a Semantic Web developer and other all the other things out there a nerd like me
 is interested in.</span></span>
 
-### Why depressiverobot.com?
+## Why depressiverobot.com?
 You know <span typeof="Person"><a property="sameAs"
 target="_blank" href="http://en.wikipedia.org/wiki/Marvin_the_Paranoid_Android"><span
 property="name">Marvin the Paranoid Android</span></a></span> from <span
@@ -30,10 +29,7 @@ property="sameAs" target="_blank"
 href="http://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_(film)">movie</a></span>.
 However, his name is Marvin and mine too, so one thing led to another.
 
-<br/>
-<br/>
-
-# Credits
+## Credits
 This site is:
 
 * hosted on [GitHub](https://github.com)
@@ -41,3 +37,4 @@ This site is:
 * dressed up with [Lanyon](http://lanyon.getpoole.com)
 * awesome because use of [Font Awesome](http://fortawesome.github.io/Font-Awesome)
 * made tangible using [QuoJS](http://quojs.tapquo.com)
+* crafted with <i class="fa fa-heart"></i> in Leipzig
