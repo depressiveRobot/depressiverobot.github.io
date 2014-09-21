@@ -2,15 +2,13 @@
  * Custom CSS definitions
  */
 
-/* remove the dotted outline from images */
-img:focus {
-  outline: 0;
-}
-
 .sidebar small {
   font-size: 67%;
 }
 
+/*
+ * Area on left side to enable swipe right gesture to slide out menu
+ */
 .sidebar-touch {
   position: fixed;
   top:  0;
@@ -20,7 +18,6 @@ img:focus {
   opacity: 0;
   height: 100%;
 }
-
 #sidebar-checkbox:checked ~ .sidebar-touch {
   left: 14rem;
 }
