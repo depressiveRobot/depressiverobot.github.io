@@ -21,7 +21,7 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
  <rights type="html">
-    &#x3C;span resource=&#x22;http://depressiverobot.com&#x22;&#x3E;All content on this site by &#x3C;span property=&#x22;http://creativecommons.org/ns#attributionName&#x22;&#x3E;Marvin Frommhold&#x3C;/span&#x3E; is licensed under a &#x3C;a property=&#x22;http://creativecommons.org/ns#license&#x22; href=&#x22;http://creativecommons.org/licenses/by-nc/4.0/&#x22;&#x3E;Creative Commons Attribution-NonCommercial 4.0 International License&#x3C;/a&#x3E;.&#x3C;/span&#x3E;
+    &#x3C;span resource=&#x22;http://depressiverobot.com/&#x22;&#x3E;All content on this site by &#x3C;span property=&#x22;http://creativecommons.org/ns#attributionName&#x22;&#x3E;Marvin Frommhold&#x3C;/span&#x3E; is licensed under a &#x3C;a property=&#x22;http://creativecommons.org/ns#license&#x22; href=&#x22;http://creativecommons.org/licenses/by-nc/4.0/&#x22;&#x3E;Creative Commons Attribution-NonCommercial 4.0 International License&#x3C;/a&#x3E;.&#x3C;/span&#x3E;
   </rights>
 
  {% for post in site.posts %}

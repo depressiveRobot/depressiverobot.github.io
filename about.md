@@ -4,15 +4,15 @@ layout: page
 <span resource="#MarvinFrommhold"><img alt="Marvin Frommhold" property="image" src="{{ site.url }}/public/me.jpg" style="position: relative; left: 25%; max-width: 50%;" /></span>
 
 # About me
-<span resource="#MarvinFrommhold">I am <span property="name"><span property="givenName">Marvin</span> <span property="familyName">Frommhold</span></span>, a researcher and developer in the area of the <a property="foaf:interest" href="http://w3.org/standards/semanticweb" >Semantic Web</a>. My hometown is <span property="homeLocation" resource="http://leipzig.de"><span resource="http://leipzig.de" typeof="City"><a property="sameAs" target="_blank" href="http://leipzig.de"><span property="name">Leipzig</span></a></span></span>, where I grew up. It is also the place where I currently study and work. Sounds boring, but I can tell you it is not <i class="fa fa-smile-o"></i></span>
+<span resource="#MarvinFrommhold">I am <span property="name"><span property="givenName">Marvin</span> <span property="familyName">Frommhold</span></span>, a researcher and developer in the area of the <a property="foaf:interest" href="http://w3.org/standards/semanticweb/" >Semantic Web</a>. My hometown is <span property="homeLocation" resource="http://leipzig.de/"><span resource="http://leipzig.de/" typeof="City"><a property="sameAs" target="_blank" href="http://leipzig.de/"><span property="name">Leipzig</span></a></span></span>, where I grew up. It is also the place where I currently study and work. Sounds boring, but I can tell you it is not <i class="fa fa-smile-o"></i></span>
 
-* member of research group <span resource="#MarvinFrommhold"><span property="memberOf" resource="http://aksw.org"><span resource="http://aksw.org" typeof="Organization"><a property="sameAs" target="_blank" href="http://aksw.org"><span property="name">AKSW</span></a></span></span></span>
-* Semantic Web developer at <span resource="#MarvinFrommhold"><span property="worksFor" resource="http://eccenca.com"><span resource="http://eccenca.com" typeof="Organization"><a property="sameAs" target="_blank" href="http://eccenca.com"><span property="name">eccenca</span></a></span></span></span>
+* member of research group <span resource="#MarvinFrommhold"><span property="memberOf" resource="http://aksw.org/"><span resource="http://aksw.org/" typeof="Organization"><a property="sameAs" target="_blank" href="http://aksw.org/"><span property="name">AKSW</span></a></span></span></span>
+* Semantic Web developer at <span resource="#MarvinFrommhold"><span property="worksFor" resource="http://eccenca.com/"><span resource="http://eccenca.com/" typeof="Organization"><a property="sameAs" target="_blank" href="http://eccenca.com/"><span property="name">eccenca</span></a></span></span></span>
 
 <br/>
 
 # About this site
-<span resource="http://depressiverobot.com"><span
+<span resource="http://depressiverobot.com/"><span
 property="description">This web site serves as a place for posts about my thesis,
 the adventures as a Semantic Web developer and other all the other things out there a nerd like me
 is interested in.</span></span>
