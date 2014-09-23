@@ -7,8 +7,8 @@ permalink:        pretty
 
 # Setup
 title:            depressiverobot.com
-tagline:          "a semantic developer's blog"
-description:      "A blog full of stuff around my PhD thesis, (semantic) developer things, gadgets and everything else I'm interested in."
+tagline:          "a semantic web developer blog"
+description:      "A blog full of stuff around my PhD thesis, the adventures as a Semantic Web developer and everything else I'm interested in."
 url:              http://depressiverobot.com
 baseurl:          "/"
 paginate:         5
