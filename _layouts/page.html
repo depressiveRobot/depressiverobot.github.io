@@ -2,7 +2,11 @@
 layout: default
 ---
 
+{% if page.id != null %}
+<article id="{{ page.id }}" class="page">
+{% else %}
 <article class="page">
+{% endif %}
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </article>

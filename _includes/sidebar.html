@@ -11,40 +11,34 @@
   
   <!-- blog pages -->
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
-    <a class="sidebar-nav-item{% if page.url == '/photos/' %} active{% endif %}" href="/photos/">Photos</a>
-    <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="/about/">About</a>
-
-    <!--
+    <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="/" property="SiteNavigationElement">Home</a>
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
-
-    {% assign pages_list = site.pages %}
+    {% assign pages_list = (site.pages | sort: 'position') %}
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}" property="SiteNavigationElement">{{ node.title }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
-    -->
   </nav>
 
   <!-- social links -->
-  <div class="sidebar-item" style="text-align: center;">
-    <a style="display: inline-block; padding: 0 0.3rem;" title="Twitter" target="_blank" href="https://twitter.com/depressiveRobot"><i class="fa fa-twitter fa-2x"></i></a>
-    <a style="display: inline-block; padding: 0 0.3rem;" title="Google+" target="_blank" href="https://plus.google.com/+MarvinFrommhold/"><i class="fa fa-google-plus fa-2x"></i></a>
-    <a style="display: inline-block; padding: 0 0.3rem;" title="GitHub" target="_blank" href="https://github.com/depressiveRobot"><i class="fa fa-github fa-2x"></i></a>
+  <div class="sidebar-item" style="text-align: center;" resource="{{ site.author.uri }}">
+    <a style="display: inline-block; padding: 0 0.3rem;" title="Twitter" target="_blank" href="https://twitter.com/depressiveRobot" property="url foaf:account"><i class="fa fa-twitter fa-2x"></i></a>
+    <a style="display: inline-block; padding: 0 0.3rem;" title="Google+" target="_blank" href="https://plus.google.com/+MarvinFrommhold/" property="url foaf:account"><i class="fa fa-google-plus fa-2x"></i></a>
+    <a style="display: inline-block; padding: 0 0.3rem;" title="GitHub" target="_blank" href="https://github.com/depressiveRobot" property="url foaf:account"><i class="fa fa-github fa-2x"></i></a>
     <a style="display: inline-block; padding: 0 0.3rem;" title="RSS feed" target="_blank" href="http://depressiverobot.com/atom.xml"><i class="fa fa-rss fa-2x"></i></a>
     <p style="clear: both;"></p>
   </div>
 
   <!-- license information -->
   <div class="sidebar-item" style="padding-top: 5rem;">
-    <small resource="http://depressiverobot.com/">
-      All content on this site by <span property="cc:attributionName">Marvin Frommhold</span> is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+    <small resource="{{ site.uri }}">
+      All content on this site by <span property="cc:attributionName">{{ site.author.name }}</span> is licensed under a <a property="cc:license" href="{{ site.license.url }}" target="_blank">{{ site.license.name }}</a>.
     </small>
   </div>
 </div>

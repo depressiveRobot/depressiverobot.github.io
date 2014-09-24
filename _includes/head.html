@@ -14,26 +14,24 @@
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &#xB7; {{ site.tagline }}
-    {% else if page.url == "/about/" %}
-      About &#xB7; {{ site.title }}
     {% else %}
       {{ page.title }} &#xB7; {{ site.title }}
     {% endif %}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/lanyon.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/depressiverobot.css" />
+  <link rel="stylesheet" href="/public/css/poole.css" />
+  <link rel="stylesheet" href="/public/css/syntax.css" />
+  <link rel="stylesheet" href="/public/css/lanyon.css" />
+  <link rel="stylesheet" href="/public/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/public/css/depressiverobot.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400" />
 
   <!-- Icons -->
-  <link rel="icon" sizes="192x192" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png" />
-  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico" />
+  <link rel="icon" sizes="192x192" href="/public/apple-touch-icon-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/public/apple-touch-icon-precomposed.png" />
+  <link rel="shortcut icon" href="/public/favicon.ico" />
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml" />
 </head>
