@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html>
 
   {% include head.html %}
 
-  <body vocab="http://schema.org/" prefix="foaf: http://xmlns.com/foaf/0.1/ cc: http://creativecommons.org/ns#" resource="{{ site.pageurl }}" typeof="{{ page.typeof }}">
+  <body>
 
-    <span property="isPartOf" resource="{{ site.uri }}" typeof="WebSite Blog"><span property="author" resource="{{ site.author.uri }}"></span></span>
+    {% include header.html %}
 
-    {% include sidebar.html %}
+    <!-- content start -->
 
-    <div class="sidebar-touch"></div>
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <header class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home" property="SiteNavigationElement">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </header>
-
-      <div class="container content">
-        <main>
-          {{ content }}
-        </main>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle fa fa-bars"></label>
+    <!-- content end -->
 
-    <script src="/public/js/quo.js"></script>
-    <script src="/public/js/depressiverobot.js"></script>
-    {% include google_analytics.html %}
+    {% include footer.html %}
 
   </body>
+
 </html>

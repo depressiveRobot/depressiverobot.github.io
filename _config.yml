@@ -1,33 +1,60 @@
-# Dependencies
-markdown:         "redcarpet"
-highlighter:      "pygments"
+# Build settings
+markdown: redcarpet
+highlighter: pygments
 
-# Permalinks
-permalink:        "pretty"
+# Site settings
+title: "depressiverobot.com"
+description: a semantic web developer blog
+# > # this means to ignore newlines until "email:"
 
-# Setup
-title:            "depressiverobot.com"
-tagline:          "a semantic web developer blog"
-description:      "A blog full of stuff around my PhD thesis, the adventures as a Semantic Web developer and everything else I'm interested in."
-url:              "http://depressiverobot.com"
-uri:              "http://depressiverobot.com/"
-baseurl:          ""
-paginate:         5
-license:
-  name:         "Creative Commons Attribution-NonCommercial 4.0 International License"
-  url:          "http://creativecommons.org/licenses/by-nc/4.0/"
+email: marvin.frommhold@gmail.com
+#blog logo
+logo: "/assets/images/author.png"
+# blog cover
+cover: "/assets/images/DSC_2775.jpg"
 
-author:
-  name:           "Marvin Frommhold"
-  uri:            "http://depressiverobot.com/about/#MarvinFrommhold"
+name: 'Marvin Frommhold'
+author: 'Marvin Frommhold'
+author_image: "/assets/images/author.png"
 
-atom:
-  categories:
-    - term: semantic web
-      label: Semantic Web
-    - term: technology
-      label: Technology
-    - term: development
-      label: Development
-    - term: research
-      label: Research
+paginate:	10
+
+url: "http://depressiverobot.com/" # the base hostname & protocol for your site
+baseurl: ""
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/depressiveRobot
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+  - icon:  google-plus
+    url: https://google.com/+MarvinFrommhold
+    desc:  Add me on google+
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: github
+    url:  https://github.com/depressiveRobot
+    desc: Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:  rss
+    url:   https://depressiverobot.com/feed.xml
+    desc: Subscribe to my feed
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: //www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
