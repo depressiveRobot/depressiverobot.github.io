@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body itemscope itemtype="http://schema.org/Article">
+  <body vocab="http://schema.org/" prefix="foaf: http://xmlns.com/foaf/0.1/ cc: http://creativecommons.org/ns#" typeof="WebPage Article">
+    <span property="isPartOf" resource="http://depressiverobot.com/" typeof="WebSite Blog"><span property="author" resource="http://depressiverobot.com/about/#MarvinFrommhold"></span></span>
     {% include header.html %}
     <main class="content" role="main">
       <article class="post">
@@ -16,7 +17,7 @@
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
+              <h4 class="author-name" property="author" resource="http://depressiverobot.com/about/#MarvinFrommhold">{{ site.author }}</h4>
               on
               <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
@@ -70,7 +71,7 @@
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
+              <h4 class="author-name" property="author" resource="http://depressiverobot.com/about/#MarvinFrommhold">{{ page.author }}</h4>
               on
               <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->

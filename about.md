@@ -2,16 +2,51 @@
 layout: page
 title: About
 permalink: /about/
+image: /assets/article_images/about/marvin-the-robot.jpg
 ---
+<div resource="http://depressiverobot.com/about/#MarvinFrommhold" typeof="Person">
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+  <p>
+    I am <span property="name"><span property="givenName">Marvin</span> <span property="familyName">Frommhold</span></span>, a researcher and developer in the area of the <a property="foaf:interest" href="http://w3.org/standards/semanticweb/">Semantic Web</a>. My hometown is <span property="homeLocation" resource="http://leipzig.de/"><span resource="http://leipzig.de/" typeof="City"><a property="sameAs" target="_blank" href="http://leipzig.de/"><span property="name">Leipzig</span></a></span></span> which is also the place where I currently study and work. Sounds boring, but I can tell you it's not <i class="fa fa-smile-o"></i>
+  </p>
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+  <ul>
+    <li>
+      PhD in Computer Science at <span property="alumniOf" resource="http://uni-leipzig.de/" typeof="CollegeOrUniversity"><a property="sameAs url" target="_blank" href="http://uni-leipzig.de/"><span property="name">University of Leipzig</span></a></span>
+    </li>
+    <li>
+      member of research group <span property="memberOf" resource="http://aksw.org/Groups/AKSW" typeof="http://purl.org/vocab/aiiso/schema#ResearchGroup"><a property="sameAs url" target="_blank" href="http://aksw.org/"><span property="name">AKSW</span></a></span>
+    </li>
+    <li>
+      <span property="title">Semantic Web developer</span> at <span property="worksFor" resource="http://eccenca.com/" typeof="Organization"><a property="sameAs url" target="_blank" href="http://eccenca.com/"><span property="name">eccenca</span></a></span>
+    </li>
+  </ul>
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+  <div property="foaf:weblog" resource="http://depressiverobot.com/" typeof="WebSite">
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+    <h1>About this site</h1>
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+    <p>
+      <span property="description">This web site serves as a place for posts about my PhD thesis, the adventures as a semantic Web developer and other all the other things out there a nerd like me is interested in.</span>
+    </p>
+
+    <h2>Why depressiverobot.com?</h2>
+    <p>
+      You know <span typeof="Person"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/ Marvin_the_Paranoid_Android"><span property="name">Marvin the Paranoid Android</span></a></span> from <span typeof="Book"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/ The_Hitchhiker's_Guide_to_the_Galaxy"><span property="name">The Hitchhiker's Guide to the Galaxy</span></a></span>? No?! Then go for a read. Or if you more like me and too lazy to read a book, watch the amusing <span typeof="Movie"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_(film)">movie</a></span>. However, his name is Marvin and mine too, so one thing led to another.
+    </p>
+
+    <h2>Credits</h2>
+    <p>
+      This site is:
+    </p>
+
+    <ul>
+      <li> hosted on <a href="https://github.com">GitHub</a></li>
+      <li> deployed utilizing <a href="http://jekyllrb.com">Jekyll</a></li>
+      <li> dressed up with <a href="https://github.com/dirkfabisch/mediator">Mediator</a></li>
+      <li> awesome because use of <a href="http://fortawesome.github.io/Font-Awesome">Font Awesome</a></li>
+      <li> crafted with <i class="fa fa-heart"></i> in Leipzig</li>
+    </ul>
+  </div>
+
+</div>
