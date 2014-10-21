@@ -24,29 +24,29 @@ baseurl: ""
 
 # social icons and sharing options
 social:
-  - icon:	twitter
-    url:	https://twitter.com/depressiveRobot
+  - icon: twitter
+    url: ttps://twitter.com/depressiveRobot
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
-  - icon:  google-plus
+  - icon: google-plus
     url: https://google.com/+MarvinFrommhold
-    desc:  Add me on google+
+    desc: Add me on google+
     share_url:
     share_title:
     share_link:
 
   - icon: github
-    url:  https://github.com/depressiveRobot
+    url: https://github.com/depressiveRobot
     desc: Fork me on github
     share_url:
     share_title:
     share_link:
 
   - icon:  rss
-    url:   https://depressiverobot.com/feed.xml
+    url: http://depressiverobot.com/feed.xml
     desc: Subscribe to my feed
     share_url:
     share_title:
