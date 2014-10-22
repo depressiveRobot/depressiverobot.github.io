@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-image: /assets/article_images/about/marvin-the-robot.jpg
 ---
 <div resource="http://depressiverobot.com/about/#MarvinFrommhold" typeof="Person">
 

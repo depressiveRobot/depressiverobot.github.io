@@ -22,9 +22,11 @@ $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
 %vertical-rhythm
   margin-bottom: $rs
 
-
+html
+  height: 100%
 
 body
+  height: 100%
   font-family: $font-sans
   margin: 0
   padding: 0
@@ -56,7 +58,7 @@ body
     background-repeat: no-repeat
 
 .teaserimage
-  height: 450px
+  height: calc(100% - 180px)
   position: relative
   overflow: hidden
   background-color: #000
