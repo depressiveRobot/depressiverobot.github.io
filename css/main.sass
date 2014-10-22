@@ -58,7 +58,7 @@ body
     background-repeat: no-repeat
 
 .teaserimage
-  height: calc(100% - 180px)
+  height: calc(100% - 200px)
   position: relative
   overflow: hidden
   background-color: #000
@@ -75,7 +75,7 @@ body
 
 .blog-header
   width: 100%
-  max-width: 640px
+  max-width: 700px
   margin: 0 auto
   position: relative
   padding: 0
@@ -83,12 +83,12 @@ body
   @include respond-to(800)
     padding: 0 $rs
   .blog-logo
-    width: $rs*7.5
-    height: $rs*7.5
+    width: $rs*6.5
+    height: $rs*6.5
     position: absolute
     top: -$rs*3.75
     right: 50%
-    margin-right: -$rs*3.75
+    margin-right: -$rs*3.25
     background-size: cover
     border-radius: 50%
     z-index: 99
@@ -100,7 +100,7 @@ body
     box-shadow: 0 1px 1px rgba(0,0,0,0.3)
   .blog-title
     margin: 0
-    padding: $rs*5.25 $rs $rs/2
+    padding: $rs*4 $rs 0
     font-size: 30px
     text-align: center
     font-weight: 700
@@ -129,7 +129,7 @@ body
 
 .content
   width: 100%
-  max-width: 640px
+  max-width: 700px
   margin: 0 auto
   @include box-sizing(border-box)
   @include respond-to(800)
@@ -220,7 +220,7 @@ body
   margin: 0 auto
   padding: $rs*3 0
   width: 100%
-  max-width: 640px
+  max-width: 700px
   font-size: $rs/4*3
   text-align: center
   color: #999
@@ -543,13 +543,13 @@ body
     width: 100%
     position: relative
     z-index: 99
-    max-width: 640px
+    max-width: 700px
     padding: 120px 0 90px
     text-align: center
     margin: 0 auto
     .blog-title
       margin: 0
-      padding: 0 0 10px
+      padding: 0
       font-size: 30px
       text-align: center
       font-weight: 700

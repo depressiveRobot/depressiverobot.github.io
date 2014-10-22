@@ -6,7 +6,7 @@ permalink: /about/
 <div resource="http://depressiverobot.com/about/#MarvinFrommhold" typeof="Person">
 
   <p>
-    I am <span property="name"><span property="givenName">Marvin</span> <span property="familyName">Frommhold</span></span>, a researcher and developer in the area of the <a property="foaf:interest" href="http://w3.org/standards/semanticweb/">Semantic Web</a>. My hometown is <span property="homeLocation" resource="http://leipzig.de/"><span resource="http://leipzig.de/" typeof="City"><a property="sameAs" target="_blank" href="http://leipzig.de/"><span property="name">Leipzig</span></a></span></span> which is also the place where I currently study and work. Sounds boring, but I can tell you it's not <i class="fa fa-smile-o"></i>
+    I am <span property="name"><span property="givenName">Marvin</span> <span property="familyName">Frommhold</span></span>, a researcher and developer in the area of the <a property="foaf:interest" href="http://w3.org/standards/semanticweb/">Semantic Web</a>. My hometown is <span property="homeLocation" resource="http://leipzig.de/"><span resource="http://leipzig.de/" typeof="City"><a property="sameAs" target="_blank" href="http://leipzig.de/"><span property="name">Leipzig</span></a></span></span> which is also the place where I currently study and work.
   </p>
 
   <ul>
