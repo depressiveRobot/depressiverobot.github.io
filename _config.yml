@@ -3,7 +3,7 @@ markdown: redcarpet
 highlighter: pygments
 
 # Site settings
-title: "depressiverobot.com"
+title: "depressiveRobot"
 description: a semantic web developer blog
 # > # this means to ignore newlines until "email:"
 

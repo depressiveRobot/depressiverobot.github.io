@@ -23,18 +23,18 @@ permalink: /about/
 
   <div property="foaf:weblog" resource="http://depressiverobot.com/" typeof="WebSite">
 
-    <h1>About this site</h1>
+    <h2>About this site</h2>
 
     <p>
       <span property="description">This web site serves as a place for posts about my PhD thesis, the adventures as a semantic Web developer and other all the other things out there a nerd like me is interested in.</span>
     </p>
 
-    <h2>Why depressiverobot.com?</h2>
+    <h3>Why depressiveRobot?</h3>
     <p>
-      You know <span typeof="Person"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/ Marvin_the_Paranoid_Android"><span property="name">Marvin the Paranoid Android</span></a></span> from <span typeof="Book"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/ The_Hitchhiker's_Guide_to_the_Galaxy"><span property="name">The Hitchhiker's Guide to the Galaxy</span></a></span>? No?! Then go for a read. Or if you more like me and too lazy to read a book, watch the amusing <span typeof="Movie"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_(film)">movie</a></span>. However, his name is Marvin and mine too, so one thing led to another.
+      You know <span typeof="Person"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/Marvin_the_Paranoid_Android"><span property="name">Marvin the Paranoid Android</span></a></span> from <span typeof="Book"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy"><span property="name">The Hitchhiker's Guide to the Galaxy</span></a></span>? No?! Then go for a read. Or if you more like me and too lazy to read a book, watch the amusing <span typeof="Movie"><a property="sameAs" target="_blank" href="http://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_(film)">movie</a></span>. However, his name is Marvin and mine too, so one thing led to another.
     </p>
 
-    <h2>Credits</h2>
+    <h3>Credits</h3>
     <p>
       This site is:
     </p>
