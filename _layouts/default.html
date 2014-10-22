@@ -5,7 +5,7 @@
 
   <body vocab="http://schema.org/" prefix="foaf: http://xmlns.com/foaf/0.1/ cc: http://creativecommons.org/ns#" typeof="WebPage">
 
-    <span property="isPartOf" resource="http://depressiverobot.com/" typeof="WebSite Blog"><span property="author" resource="http://depressiverobot.com/about/#MarvinFrommhold"></span></span>
+    <span property="isPartOf" resource="{{ site.uri }}" typeof="WebSite Blog"><span property="author" resource="{{ site.author.uri }}"></span></span>
 
     {% include header.html %}
 

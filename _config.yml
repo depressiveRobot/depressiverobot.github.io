@@ -4,23 +4,25 @@ highlighter: pygments
 
 # Site settings
 title: "depressiveRobot"
-description: a semantic web developer blog
+description: "a semantic web developer blog"
 # > # this means to ignore newlines until "email:"
 
-email: marvin.frommhold@gmail.com
 #blog logo
 logo: "/assets/images/author.png"
 # blog cover
 cover: "/assets/images/DSC_2775.jpg"
 
-name: 'Marvin Frommhold'
-author: 'Marvin Frommhold'
-author_image: "/assets/images/author.png"
+author:
+  name: "Marvin Frommhold"
+  image: "/assets/images/author.png"
+  email: "marvin.frommhold@gmail.com"
+  uri: "http://depressiverobot/about/#MarvinFrommhold"
 
 paginate:	10
 
 url: "http://depressiverobot.com" # the base hostname & protocol for your site
 baseurl: ""
+uri: "http://depressiverobot.com/"
 
 # social icons and sharing options
 social:

@@ -3,12 +3,12 @@
 <footer class="site-footer">
 <!--  <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a> -->
   <div class="inner">
-    <section class="copyright" resource="http://depressiverobot.com/">
-      All content on this site by <a href="mailto:{{ site.email}}" resource="http://depressiverobot.com/"><span property="cc:attributionName">{{ site.name }}</span></a> is licensed under a <br/>
+    <section class="copyright" resource="{{ site.uri }}">
+      All content on this site by <a href="mailto:{{ site.author.email}}" resource="{{ site.uri }}"><span property="cc:attributionName">{{ site.author.name }}</span></a> is licensed under a <br/>
       <a property="cc:license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
     </section>
     <section class="poweredby">
-      Made with <a href="http://jekyllrb.com"> Jekyll</a>
+      Made with <a href="http://jekyllrb.com">Jekyll</a>
     </section>
   </div>
 </footer>
