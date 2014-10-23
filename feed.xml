@@ -6,7 +6,7 @@ layout: null
     <id>{{ site.uri }}</id>
     <title>{{ site.title | xml_escape }}</title>
     <subtitle>{{ site.description | xml_escape }}</subtitle>
-    <icon>{{ "/assets/images/favicon.ico" | prepend: site.baseurl | prepend: site.url }}</icon>
+    <icon>{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}</icon>
     <logo>{{ "/assets/images/author.png" | prepend: site.baseurl | prepend: site.url }}</logo>
     <link href="{{ site.url }}{{ site.baseurl }}" rel="alternate" type="text/html" hreflang="en"/>
     <link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/atom+xml" />
