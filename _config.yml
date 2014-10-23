@@ -18,6 +18,10 @@ author:
   email: "marvin.frommhold@gmail.com"
   uri: "http://depressiverobot/about/#MarvinFrommhold"
 
+license:
+  url: "http://creativecommons.org/licenses/by-nc/4.0/"
+  name: "Creative Commons Attribution-NonCommercial 4.0 International License"
+
 paginate:	10
 
 url: "http://depressiverobot.com" # the base hostname & protocol for your site

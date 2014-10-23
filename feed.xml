@@ -2,29 +2,42 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>{{ site.uri }}</id>
     <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
+    <subtitle>{{ site.description | xml_escape }}</subtitle>
+    <icon>{{ "/assets/images/favicon.ico" | prepend: site.baseurl | prepend: site.url }}</icon>
+    <logo>{{ "/assets/images/author.png" | prepend: site.baseurl | prepend: site.url }}</logo>
+    <link href="{{ site.url }}{{ site.baseurl }}" rel="alternate" type="text/html" hreflang="en"/>
+    <link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/atom+xml" />
+    <author>
+        <name>{{ site.author.name }}</name>
+        <uri>{{ site.author.uri }}</uri>
+    </author>
+    <rights type="html">
+        &#x3C;span resource=&#x22;{{ site.uri }}&#x22;&#x3E;All content on this site by &#x3C;span property=&#x22;http://creativecommons.org/ns#attributionName&#x22;&#x3E;{{ site.author.name }}&#x3C;/span&#x3E; is licensed under a &#x3C;a property=&#x22;http://creativecommons.org/ns#license&#x22; href=&#x22;{{ site.license.url }}&#x22;&#x3E;{{ site.license.name }}&#x3C;/a&#x3E;.&#x3C;/span&#x3E;
+    </rights>
+    <updated>{{ site.time | date_to_rfc822 }}</updated>
+    <generator uri="http://jekyllrb.com/" version="{{ jekyll.version }}">
+        Jekyll v{{ jekyll.version }}
+    </generator>
     {% for post in site.posts limit:10 %}
-      <item>
+    <entry>
+        <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>
         <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <link href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" />
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
         {% for tag in post.tags %}
         <category>{{ tag | xml_escape }}</category>
         {% endfor %}
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
-      </item>
+        <content type="html">{{ post.content | xml_escape }}</content>
+        <author>
+            <name>{{ site.author.name }}</name>
+            <uri>{{ site.author.uri }}</uri>
+        </author>
+    </entry>
     {% endfor %}
-  </channel>
-</rss>
+</feed>
