@@ -18,7 +18,7 @@ typeof: WebPage
               <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
             </section>
             <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+              <i class="fa fa-calendar-o" style="padding-right: 5px;"></i><time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
               <span class="comments_count"><i class="fa fa-comments"></i><a href="{{ post.url }}#disqus_thread">Comments</a></span>
   <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
@@ -40,7 +40,7 @@ typeof: WebPage
               <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
             </section>
             <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+              <i class="fa fa-calendar-o" style="padding-right: 5px;"></i><time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
               <span class="comments_count"><i class="fa fa-comments"></i><a href="{{ post.url }}#disqus_thread">Comments</a></span>
 <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
@@ -62,7 +62,6 @@ typeof: WebPage
         {% endif %}
       {% endif %}
     </nav>
-
 
     <!-- {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}} -->

@@ -38,7 +38,7 @@
         {% endif %}
         <section class="post-content">
           <div class="post-reading">
-            <span class="post-reading-time"></span> read
+            <i class="fa fa-clock-o"></i> <span class="post-reading-time"></span> read
           </div>
           <a name="topofpage"></a>
           {{content}}
@@ -63,7 +63,7 @@
               <h4>{{ site.author }}</h4>
               <p class="bio">{{author.bio}}</p>
               <hr>
-              <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+              <p class="published"><i class="fa fa-calendar-o"></i><time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
             </section>
           </div>
           {{/post}}
