@@ -59,8 +59,8 @@
           <div class="isLeft">
             <h5 class="index-headline featured"><span>Written by</span></h5>
             <section class="author">
-              <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
-              <h4>{{ site.author }}</h4>
+              <div class="author-image" style="background-image: url({{site.author.image}})">Blog Logo</div>
+              <h4>{{ site.author.name }}</h4>
               <p class="bio">{{author.bio}}</p>
               <hr>
               <p class="published"><i class="fa fa-calendar-o"></i><time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
@@ -72,8 +72,12 @@
             <footer class="site-footer">
               <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
               <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <br/>
+              <br/>
               <div class="inner">
-                <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; 2014<br>All rights reserved.</section>
+                <section class="copyright" resource="{{ site.uri }}">
+                  All content on this site by <a href="mailto:{{ site.author.email}}" resource="{{ site.uri }}"><span property="cc:attributionName">{{ site.author.name }}</span></a> is licensed under a <a property="cc:license" href="{{ site.license.url }}" target="_blank">{{ site.license.name }}</a>.
+                </section>
               </div>
             </footer>
           </div>
