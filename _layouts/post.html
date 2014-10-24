@@ -13,6 +13,11 @@
           <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
             Article Image
           </div>
+          {% if page.image_credits %}
+          <div class="image-credits">
+            Image: {{ page.image_credits }}
+          </div>
+          {% endif %}
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
@@ -37,9 +42,15 @@
         <br>
         {% endif %}
         <section class="post-content">
+          {% if page.image %}
+          <div class="post-reading tag-article-image">
+            <i class="fa fa-clock-o"></i> <span class="post-reading-time"></span> read
+          </div>
+          {% else %}
           <div class="post-reading">
             <i class="fa fa-clock-o"></i> <span class="post-reading-time"></span> read
           </div>
+          {% endif %}
           <a name="topofpage"></a>
           {{content}}
         </section>
@@ -61,9 +72,10 @@
             <section class="author">
               <div class="author-image" style="background-image: url({{site.author.image}})">Blog Logo</div>
               <h4>{{ site.author.name }}</h4>
-              <p class="bio">{{author.bio}}</p>
-              <hr>
-              <p class="published"><i class="fa fa-calendar-o"></i><time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+              <p class="user-bio">{{site.author.bio}}</p>
+              <p class="published">
+                <i class="fa fa-calendar-o" style="padding-right: 5px;"></i><time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
+              </p>
             </section>
           </div>
           {{/post}}
@@ -76,13 +88,15 @@
               <br/>
               <div class="inner">
                 <section class="copyright" resource="{{ site.uri }}">
-                  All content on this site by <a href="mailto:{{ site.author.email}}" resource="{{ site.uri }}"><span property="cc:attributionName">{{ site.author.name }}</span></a> is licensed under a <a property="cc:license" href="{{ site.license.url }}" target="_blank">{{ site.license.name }}</a>.
+                  This content is licensed under a <a property="cc:license" href="{{ site.license.url }}" target="_blank">{{ site.license.name }}</a>.
                 </section>
               </div>
             </footer>
           </div>
         </div>
+        {% if page.comments == true %}
         {% include disqus_comments.html %}
+        {% endif %}
       </article>
     </main>
     <div class="bottom-closer">
