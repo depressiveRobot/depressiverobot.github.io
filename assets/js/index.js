@@ -71,9 +71,11 @@
     var $window = $(window),
     $image = $('.post-image-image'),
     $content = $('.post-content');
-    $(window).resize(function() {
-      $image.height($(window).height());
-      $content.css('padding-top', $(window).height() + 'px');
-    });
+    if ($image.length) {
+      $(window).resize(function() {
+        $image.height($(window).height());
+        $content.css('padding-top', $(window).height() + 'px');
+      });
+    }
   });
 }(jQuery));
