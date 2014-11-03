@@ -23,7 +23,7 @@ author:
   image: "/assets/images/author.png"
   email: "marvin.frommhold@gmail.com"
   uri: "http://depressiverobot/about/#MarvinFrommhold"
-  bio: '<em>"Aufgrund falschen Medienkonsums und Bildungsmangel gibt es in Deutschland immer mehr assipöse Menschen."</em>'
+  bio: '<i>"Aufgrund falschen Medienkonsums und Bildungsmangel gibt es in Deutschland immer mehr <b>assipöse</b> Menschen."</i>'
 
 license:
   url: "http://creativecommons.org/licenses/by-nc/4.0/"

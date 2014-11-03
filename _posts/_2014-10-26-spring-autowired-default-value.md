@@ -7,6 +7,7 @@ tags: spring java featured
 image: /assets/article_images/2014-10-26-spring-autowired-default-value/spring.jpg
 image_credits: "<a target='_blank' href='http://www.istockphoto.com/'>© iStockphoto</a>"
 comments: true
+typeof: BlogPosting
 ---
 
 Text here...
