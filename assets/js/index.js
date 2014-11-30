@@ -76,7 +76,8 @@
     $articleImage.height(height);
     $content.css('padding-top', height + 'px');
 
-    if ($image.length) {
+    // only resize cover image
+    if (!isMobile.any) {
       $window.resize(function() {
         $image.height($window.height());
         $articleImage.height($window.height());
