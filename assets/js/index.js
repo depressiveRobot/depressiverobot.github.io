@@ -1,22 +1,24 @@
+// reading time
 (function ($) {
-    "use strict";
-    $(document).ready(function(){
-        $(".post-content").fitVids();
-        // Calculates Reading Time
-        $('.post-content').readingTime({
-            readingTimeTarget: '.post-reading-time',
-            wordCountTarget: '.post-word-count',
-        });
-        // Creates Captions from Alt tags
-        $(".post-content img").each(function() {
-            // Let's put a caption if there is one
-            if($(this).attr("alt"))
-              $(this).wrap('<figure class="image"></figure>')
-              .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
-        });
+  "use strict";
+  $(document).ready(function(){
+    $(".post-content").fitVids();
+    // Calculates Reading Time
+    $('.post-content').readingTime({
+      readingTimeTarget: '.post-reading-time',
+      wordCountTarget: '.post-word-count',
     });
+    // Creates Captions from Alt tags
+    $(".post-content img").each(function() {
+      // Let's put a caption if there is one
+      if($(this).attr("alt"))
+        $(this).wrap('<figure class="image"></figure>')
+      .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+    });
+  });
 }(jQuery));
 
+// transformation for article image
 (function ($) {
   "use strict";
   $(document).ready(function(){
@@ -47,6 +49,7 @@
   });
 }(jQuery));
 
+// transformation for frontpage image
 (function ($) {
   "use strict";
   $(document).ready(function(){
@@ -63,26 +66,39 @@
   });
 }(jQuery));
 
+// resize article image
 (function ($) {
   "use strict";
-  $(document).ready(function(){
-    var $window = $(window),
-    $image = $('.post-image-image'),
+  function arrangeItems(height) {
+    var $teaserImage = $('.teaserimage'),
     $content = $('.post-content'),
-    $articleImage = $('.article-image');
-
-    var height = $('.article-image').height();
-    $image.height(height);
+    $articleImage = $('.post-image-image'),
+    $articleImageContainer = $('.article-image'),
+    $postReading = $('.post-reading');
+    
+    $teaserImage.height(height - 200);
     $articleImage.height(height);
+    $articleImageContainer.height(height);
     $content.css('padding-top', height + 'px');
-
-    // only resize cover image
-    if (!isMobile.any) {
-      $window.resize(function() {
-        $image.height($window.height());
-        $articleImage.height($window.height());
-        $content.css('padding-top', $window.height() + 'px');
-      });
-    }
+    $postReading.css('top', (height - 36) + 'px');
+  };
+  $(document).ready(function(){
+    arrangeItems($(window).height());
+    // initial orientation mode
+    var $portraitMode = $(window).height() > $(window).width();
+    // listen to resize events
+    $(window).resize(function() {
+      if (isMobile.any) {
+        // on mobile only resize when orientation change
+        var $currentMode = $(window).height() > $(window).width();
+        if($portraitMode != $currentMode){
+          // toggle mode
+          $portraitMode = $currentMode;
+          arrangeItems($(window).height());
+        }
+      } else {
+        arrangeItems($(window).height());
+      }
+    });
   });
 }(jQuery));
