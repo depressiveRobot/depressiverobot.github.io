@@ -75,11 +75,13 @@
     $articleImage = $('.post-image-image'),
     $articleImageContainer = $('.article-image'),
     $postReading = $('.post-reading');
-    
+
     $teaserImage.height(height - 200);
     $articleImage.height(height);
     $articleImageContainer.height(height);
-    $content.css('padding-top', height + 'px');
+    if ($articleImageContainer.length) {
+      $content.css('padding-top', height + 'px');
+    }
     $postReading.css('top', (height - 36) + 'px');
   };
   $(document).ready(function(){
