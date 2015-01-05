@@ -52,6 +52,7 @@
           </div>
           {% endif %}
           <a name="topofpage"></a>
+          <br/>
           {{content}}
         </section>
         <footer class="post-footer">
@@ -80,7 +81,7 @@
                       {% else %}
                         <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_link }}{{site.url}}{{page.id}}"
                       {% endif %}
-                        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+                        target="_blank">
                       <i class="fa fa-{{ social.icon }}"></i>
                       </a>
                     {% endif %}
