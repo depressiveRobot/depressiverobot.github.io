@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to deploy a MySQL dump with docker"
+title: "how to deploy a mysql dump with docker"
 date: 2015-02-19
 categories:
 tags: docker shell mysql dump
