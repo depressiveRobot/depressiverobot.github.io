@@ -104,3 +104,11 @@
     });
   });
 }(jQuery));
+
+// open new tab for all external links
+(function ($) {
+  "use strict";
+  $(document.links).filter(function() {
+    return this.hostname != window.location.hostname;
+  }).attr('target', '_blank');
+}(jQuery));
