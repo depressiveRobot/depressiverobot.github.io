@@ -5,7 +5,7 @@ date: 2015-02-19
 categories:
 tags: docker shell mysql dump
 image: /assets/article_images/2015-02-19-mysql-dump-docker/docker.png
-image_credits: "<a href='https://denibertovic.com/talks/supercharge-development-env-using-docker/#/' target='_blank'>Deni Bertovic</a>"
+image_credits: "<a href='http://blog.docker.com/2013/06/announcing-new-docker-style/' target='_blank'>docker</a>"
 comments: true
 typeof: BlogPosting
 ---
