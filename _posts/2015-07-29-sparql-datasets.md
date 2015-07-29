@@ -307,6 +307,7 @@ The following results are produced by different the services:
      <graph1:subject> | ex:graph2 | <graph2:subject>
 <figcaption>Stardog</figcaption>
 
+<p/>
 As we can see, the only service not returning the expected result set is Fuseki. Like in the scenarios before, this may be related to the fact that Fuseki ignores the query's dataset definition. Hence, no need to create another bug report.
 
 ## Conclusion
