@@ -48,7 +48,7 @@ In the following I want to test some popular SPARQL service implementations and 
 
 All servers were started with their default settings and loaded with the test data below. If the service does not support approach 1, the data of the default graph will be written into an explicit named graph `ex:default`.
 
-{% highlight %}
+{% highlight prolog %}
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ex: <http://example.org/> .
 
@@ -57,14 +57,14 @@ ex:graph2 rdfs:label "Graph2" .
 {% endhighlight %}
 <figcaption>default graph (ex:default)</figcaption>
 
-{% highlight %}
+{% highlight prolog %}
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <graph1:subject> rdfs:label "Subject of Graph1" .
 {% endhighlight %}
 <figcaption>ex:graph1</figcaption>
 
-{% highlight %}
+{% highlight prolog %}
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <graph2:subject> rdfs:label "Subject of Graph2" .
@@ -77,7 +77,7 @@ ex:graph2 rdfs:label "Graph2" .
 
 In the first scenario the query does not define its own dataset. That means the default dataset is defined by the service to be queried.
 
-{% highlight %}
+{% highlight sql %}
 SELECT ?s
 WHERE {
   ?s ?p ?o .
@@ -135,7 +135,7 @@ As you can see Fuseki, Oracle and Stardog use approach 1 by default. Virtuoso be
 
 Now the query defines a dataset with a specific graph as the default graph (`ex:graph1`) and an empty set of named graphs:
 
-{% highlight %}
+{% highlight sql %}
 PREFIX ex: <http://example.org/>
 
 SELECT ?s ?g ?x
@@ -196,7 +196,7 @@ Now let's evaluate the result set of Fuseki. It is the same as for Virtuoso: the
 
 ### 3. no FROM, one FROM NAMED clause
 
-{% highlight %}
+{% highlight sql %}
 PREFIX ex: <http://example.org/>
 
 SELECT ?s ?g ?x
@@ -264,7 +264,7 @@ So, what's up with Virtuoso? Executing the query produces an internal error in t
 
 The last scenario will use a query that defines a specific default graph (`ex:graph1`) as well as a named graph (`ex:graph2`).
 
-{% highlight %}
+{% highlight sql %}
 PREFIX ex: <http://example.org/>
 
 SELECT ?s ?g ?x
