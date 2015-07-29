@@ -41,14 +41,14 @@ What does this mean for service providers? Never ever store important data into 
 
 In the following I want to test some popular SPARQL service implementations and how they deal with the different scenarios a query can define its dataset. In concrete these are:
 
-* [Fuseki 2.0.0](http://jena.apache.org/download/#apache-jena-fuseki)
+* [Fuseki 2.3.0 (in-memory dataset)](http://jena.apache.org/download/#apache-jena-fuseki)
 * [Virtuoso Open Source 7.2.1](https://github.com/openlink/virtuoso-opensource/releases/tag/v7.2.1)
 * [Oracle 12c Enterprise Edition 12.1.0.2.0](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/database12c-linux-download-2240591.html)
-* [Stardog Developer 3.1.3](http://stardog.com/#download)
+* [Stardog Developer 3.1.3 (in-memory dataset)](http://stardog.com/#download)
 
 All servers were started with their default settings and loaded with the test data below. If the service does not support approach 1, the data of the default graph will be written into an explicit named graph `ex:default`.
 
-{% highlight turtle %}
+{% highlight %}
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ex: <http://example.org/> .
 
@@ -57,14 +57,14 @@ ex:graph2 rdfs:label "Graph2" .
 {% endhighlight %}
 <figcaption>default graph (ex:default)</figcaption>
 
-{% highlight turtle %}
+{% highlight %}
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <graph1:subject> rdfs:label "Subject of Graph1" .
 {% endhighlight %}
 <figcaption>ex:graph1</figcaption>
 
-{% highlight turtle %}
+{% highlight %}
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <graph2:subject> rdfs:label "Subject of Graph2" .
@@ -77,7 +77,7 @@ ex:graph2 rdfs:label "Graph2" .
 
 In the first scenario the query does not define its own dataset. That means the default dataset is defined by the service to be queried.
 
-{% highlight sparql %}
+{% highlight %}
 SELECT ?s
 WHERE {
   ?s ?p ?o .
@@ -135,7 +135,7 @@ As you can see Fuseki, Oracle and Stardog use approach 1 by default. Virtuoso be
 
 Now the query defines a dataset with a specific graph as the default graph (`ex:graph1`) and an empty set of named graphs:
 
-{% highlight sparql %}
+{% highlight %}
 PREFIX ex: <http://example.org/>
 
 SELECT ?s ?g ?x
@@ -196,7 +196,7 @@ Now let's evaluate the result set of Fuseki. It is the same as for Virtuoso: the
 
 ### 3. no FROM, one FROM NAMED clause
 
-{% highlight sparql %}
+{% highlight %}
 PREFIX ex: <http://example.org/>
 
 SELECT ?s ?g ?x
@@ -264,7 +264,7 @@ So, what's up with Virtuoso? Executing the query produces an internal error in t
 
 The last scenario will use a query that defines a specific default graph (`ex:graph1`) as well as a named graph (`ex:graph2`).
 
-{% highlight sparql %}
+{% highlight %}
 PREFIX ex: <http://example.org/>
 
 SELECT ?s ?g ?x
