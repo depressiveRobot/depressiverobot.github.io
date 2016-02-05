@@ -3,7 +3,7 @@ layout: post
 title: "fix PATH environment variable for IntelliJ IDEA on Mac OS X"
 date: 2016-02-05
 categories:
-tags: [os x, intellij idea, environment variables, gradle, external commands]
+tags: [os x, intellij idea, environment variables, gradle, external commands, jetbrains]
 image: /assets/article_images/2016-02-05-intellij-path/env.jpg
 comments: true
 typeof: BlogPosting
@@ -24,7 +24,7 @@ It seems, I am not the only one having this problem:
 
 ## why the problem exists?
 
-The cause of the problem is a different set of environment variables for terminal and GUI applications in Mac OS X. As the docker client is usually installed via `brew install docker` on OS X, the binary is located in `/usr/local/bin`. However, the `PATH` environment for GUI applications is limited to `/usr/bin:/bin:/usr/sbin:/sbin` by default. That means, the `docker` command is not available for the Gradle plugin of IntelliJ IDEA.
+The cause of the problem is a different set of environment variables for terminal and GUI applications in Mac OS X. As the docker client is usually installed via `brew install docker` on OS X, the binary is located in `/usr/local/bin`. However, the `PATH` environment for GUI applications is limited to `/usr/bin:/bin:/usr/sbin:/sbin` by default. That means, the `docker` command is not available for the Gradle plugin of IntelliJ IDEA or any other Jetbrains editor such as Webstorm etc.
 
 ## how to solve the problem?
 
@@ -43,7 +43,7 @@ However, if you still want to start IntelliJ IDEA using Spotlight, Dock etc., it
 Just close your IntelliJ IDEA instance. Save the above script to a file, make it executable and run it by passing the path of the IntelliJ IDEA app as single argument:
 
 ```sh
-wget https://gist.githubusercontent.com/depressiveRobot/23cd30d14aecb30ca186/raw/f150599d70a4628de1d66704f6881a4e17b1cb5e/osx-intellij-set-path.sh
+curl https://gist.githubusercontent.com/depressiveRobot/23cd30d14aecb30ca186/raw/f150599d70a4628de1d66704f6881a4e17b1cb5e/osx-intellij-set-path.sh > osx-intellij-set-path.sh
 chmod +x osx-intellij-set-path.sh
 ./osx-intellij-set-path.sh '/Applications/IntelliJ IDEA 15.app'
 ```
