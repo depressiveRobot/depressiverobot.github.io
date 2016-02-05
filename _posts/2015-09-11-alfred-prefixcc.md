@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lookup RDF namespaces with Alfred"
+title: "lookup RDF namespaces with Alfred"
 date: 2015-09-11
 categories:
 tags: [rdf, semantic web, linked data, alfred, workflow]

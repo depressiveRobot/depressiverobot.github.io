@@ -1,13 +1,14 @@
-gems:
-  - jekyll-sitemap
+gems: [jekyll-paginate, jekyll-gist]
 
 # jekyll settings
 host: 0.0.0.0
 port: 4000
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 sass:
   sass_dir: assets/css/_sass
@@ -17,7 +18,7 @@ title: "depressiveRobot"
 description: "a semantic web developer blog"
 # > # this means to ignore newlines until "email:"
 
-#blog logo
+# blog logo
 logo: "/assets/images/author.png"
 # blog cover
 cover: "/assets/images/DSC_2775.jpg"

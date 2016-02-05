@@ -28,4 +28,4 @@ This starts a docker container with name `dump` using the [official MySQL docker
 docker exec -i dump mysql -uroot -proot < dump.sql
 {% endhighlight %}
 
-And viola: the dump is loaded! Note that the `-i` option allows to use input redirection from the host right into the docker container.
+Et voilà: the dump is loaded! Note that the `-i` option allows to use input redirection from the host right into the docker container.
