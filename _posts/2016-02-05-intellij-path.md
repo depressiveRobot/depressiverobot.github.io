@@ -30,12 +30,22 @@ The cause of the problem is a different set of environment variables for termina
 The easiest way is to start IntelliJ IDEA from the terminal:
 
 ```bash
-$ open -a "IntelliJ IDEA 15"
+open -a "IntelliJ IDEA 15"
 ```
 
-That way, the same environment variables are set for IntelliJ IDEA as declared in your terminal.
+That way, IntelliJ IDEA uses the same environment variables as declared in your terminal.
 
-However, if you still want to start IntelliJ IDEA using Spotlight, Dock etc., it is a bit more complicated. You need to edit the application package of IntelliJ IDEA. To spare you from messing around with the package, I wrote a small script that does all the editing for you:
+However, if you still want to start IntelliJ IDEA using Spotlight, Dock etc., you have to do a bit more.
+
+Another way is to change the `PATH` variable for GUI applications using the following terminal command:
+
+```bash
+sudo launchctl config user path $PATH
+```
+
+This will set the `PATH` variable to the value of your terminal. However, you have to restart your Mac and this change will affect all of your GUI applications.
+
+The last way is to edit the application package of IntelliJ IDEA. To spare you from messing around with the package, I wrote a small script that does all the editing for you:
 
 <script src="https://gist.github.com/depressiveRobot/9cb8f799c970f0cd57ea.js"></script>
 
@@ -49,6 +59,6 @@ chmod +x osx-intellij-set-path.sh
 ./osx-intellij-set-path.sh "/Applications/IntelliJ IDEA 15.app" "$PATH"
 ```
 
-This will set the `PATH` variable for IntelliJ IDEA to the value of your terminal. Now you're able to run external commands with IntelliJ. Just like as you know it from the terminal ;)
+This will set the `PATH` variable for IntelliJ IDEA to the value of your terminal. With a few minor adjustments this should be portable to the other Jetbrains editors, too, such as WebStorm and even Android Studio.
 
-**P.S.:** With a few adjustments this should be portable to the other Jetbrains editors, too, such as WebStorm and even Android Studio.
+Whichever way you choose, now you're able to run external commands with IntelliJ. Just like as you know it from the terminal ;)
