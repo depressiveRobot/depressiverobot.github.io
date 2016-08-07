@@ -15,7 +15,7 @@ sass:
 
 # Site settings
 title: "depressiveRobot"
-description: "a semantic web developer's blog"
+description: "random stuff by a linked data engineer"
 # > # this means to ignore newlines until "email:"
 
 # blog logo
@@ -49,6 +49,13 @@ social:
     share_link: "?url="
     share_title: "&amp;text="
 
+  - icon: reddit-alien
+    url: https://www.reddit.com/user/depressiveRobot/
+    desc: View me on reddit
+    share_url:
+    share_title:
+    share_link:
+
   - icon: google-plus
     url: https://google.com/+MarvinFrommhold
     desc: Add me on google+
@@ -56,16 +63,23 @@ social:
     share_link: "?url="
     share_title:
 
-  - icon: github
+  - icon: github-alt
     url: https://github.com/depressiveRobot
     desc: Fork me on github
     share_url:
     share_title:
     share_link:
 
-  - icon:  rss
+  - icon: rss
     url: /feed.xml
     desc: Subscribe to my feed
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: info
+    url: /about/
+    desc: Read more about me
     share_url:
     share_title:
     share_link:

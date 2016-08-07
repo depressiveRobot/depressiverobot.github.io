@@ -76,13 +76,13 @@
     $articleImageContainer = $('.article-image'),
     $postReading = $('.post-reading');
 
-    $teaserImage.height(height - 200);
-    $articleImage.height(height);
-    $articleImageContainer.height(height);
+    $teaserImage.height(height * 0.6);
+    $articleImage.height(height * 0.6);
+    $articleImageContainer.height(height * 0.6);
     if ($articleImageContainer.length) {
-      $content.css('padding-top', height + 'px');
+      $content.css('padding-top', height * 0.6 + 'px');
     }
-    $postReading.css('top', (height - 36) + 'px');
+    $postReading.css('top', (height * 0.6 - 36) + 'px');
   };
   $(document).ready(function(){
     arrangeItems($(window).height());
