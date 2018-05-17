@@ -1,4 +1,4 @@
-gems: [jekyll-paginate, jekyll-gist]
+plugins: [jekyll-paginate, jekyll-gist]
 
 # jekyll settings
 host: 0.0.0.0
