@@ -31,7 +31,7 @@ author:
   bio: '<i>"Aufgrund falschen Medienkonsums und Bildungsmangel gibt es in Deutschland immer mehr <b>assipöse</b> Menschen."</i>'
 
 license:
-  url: "http://creativecommons.org/licenses/by-nc/4.0/"
+  url: "https://creativecommons.org/licenses/by-nc/4.0/"
   name: "CC BY-NC 4.0 license"
 
 paginate:	10
@@ -56,13 +56,6 @@ social:
     share_title:
     share_link:
 
-  - icon: google-plus
-    url: https://google.com/+MarvinFrommhold
-    desc: Add me on google+
-    share_url: https://plus.google.com/share
-    share_link: "?url="
-    share_title:
-
   - icon: github-alt
     url: https://github.com/depressiveRobot
     desc: Fork me on github
@@ -83,10 +76,3 @@ social:
     share_url:
     share_title:
     share_link:
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: //www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
