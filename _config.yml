@@ -44,21 +44,28 @@ uri: "http://depressiverobot.com/"
 social:
   - icon: twitter
     url: https://twitter.com/depressiveRobot
-    desc: Follow me on twitter
+    desc: Follow me on Twitter
     share_url: https://twitter.com/share
     share_link: "?url="
     share_title: "&amp;text="
 
   - icon: reddit-alien
     url: https://www.reddit.com/user/depressiveRobot/
-    desc: View me on reddit
+    desc: View me on Reddit
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: gitlab
+    url: https://gitlab.com/depressiveRobot
+    desc: Fork me on GitLab
     share_url:
     share_title:
     share_link:
 
   - icon: github-alt
     url: https://github.com/depressiveRobot
-    desc: Fork me on github
+    desc: Fork me on GitHub
     share_url:
     share_title:
     share_link:
