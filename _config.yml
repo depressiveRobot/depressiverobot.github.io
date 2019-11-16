@@ -19,7 +19,8 @@ description: "random stuff by a linked data engineer"
 # > # this means to ignore newlines until "email:"
 
 # blog logo
-logo: "/assets/images/author.png"
+#logo: "/assets/images/author.png"
+logo: "/assets/images/klimastreik_social.png"
 # blog cover
 cover: "/assets/images/DSC_2775.jpg"
 
